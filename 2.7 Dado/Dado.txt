@@ -1,0 +1,1 @@
+Per usare il random bisogna importarlo con Import java.util.Random

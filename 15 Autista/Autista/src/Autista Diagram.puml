@@ -1,0 +1,32 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Autista {
+-String: Nome
+-String: Cognome
++getNome():Nome
++setNome(Nome)
++getCognome():Cognome
++setCognome(Cognome)
+}
+
+class Veicolo {
+-String: Modello
+-String:Marca
+-String:Targa
++getCognome():Cognome
++setCognome(Cognome)
++getCognome():Cognome
++setCognome(Cognome)
++getCognome():Cognome
++setCognome(Cognome)
+}
+
+class Sede{
+-Int: NPA
+-String: Indirizzo
+-String: Telefono
+}
+
+
+@enduml

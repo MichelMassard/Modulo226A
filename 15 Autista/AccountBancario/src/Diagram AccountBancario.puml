@@ -1,0 +1,26 @@
+@startuml
+'https://plantuml.com/class-diagram
+skinparam classAttributeIconSize 0
+class Account {
+    -balance: double
+    -accountNumber: String
+    +getBalance(): double
+    +setBalance(double)
+    +getaccountBalance(): String
+    +setaccountBalance(String)
+    +deposit(double amount)
+    +withdraw(double amount)
+}
+class Client {
+    -name: String
+    -account: Account
+    +getName(): double
+    +setName(double)
+    +getaccount(): Account
+    +setaccount(Account)
+    +addFounds(double (double amount)
+    +withdraw(double amount)
+}
+
+
+@enduml

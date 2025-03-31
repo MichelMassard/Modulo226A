@@ -20,14 +20,14 @@ public class Account {
             balance += amount;
             System.out.println("Deposito: " + amount + " Nuovo saldo: " + balance);
         }else {
-            System.out.println("Importo non valido")
+            System.out.println("Importo non valido");
         }
     }
     public void withdraw(double amount) {
         if (amount > balance) {
             balance -= amount;
         }else {
-            System.out.println("Importo non valido")
+            System.out.println("Importo non valido");
         }
     }
 }

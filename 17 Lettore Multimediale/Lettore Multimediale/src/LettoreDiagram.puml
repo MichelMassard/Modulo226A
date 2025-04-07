@@ -1,0 +1,34 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Player {
+    -Modello: String
+    -Marca: String
+    -Playlist: Playlist
+    +getModello(): String
+    +getModello(String)
+    +getMarca(): String
+    +setMarca(String)
+    +play()
+    +successivo()
+    +precedente()
+    +SelezionaBrano(int n)
+}
+
+class Brano{
+    -Titolo: String
+    -Autore: String
+    +getTitolo(): String
+    +setTitolo(String)
+    +getAutore(): String
+    +setAutore(String)
+}
+
+class Playlist{
+    -Titolo: String
+    -Brani[]: Brano
+    +getTitolo(): String
+    +setTitolo(String)
+}
+
+@enduml

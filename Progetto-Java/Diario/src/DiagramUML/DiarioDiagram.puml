@@ -1,0 +1,35 @@
+@startuml
+
+class Nota {
+    - titolo : String
+    - contenuto : String
+    - data : String
+    + getTitolo() : String
+    + setTitolo(String)
+    + getContenuto() : String
+    + setContenuto(String)
+    + getData() : String
+    + setData(String)
+    + toString() : String
+    + equals(Object) : boolean
+    + hashCode() : int
+}
+
+class Diario {
+    - note : ArrayList<Nota>
+    - filePath : String
+    + aggiungiNota(Nota)
+    + visualizzaNote()
+    + cercaNotaPerTitolo(String)
+    + modificaContenutoPerTitolo(String, String)
+    + eliminaNotaPerTitolo(String)
+}
+
+class DiarioDigitale {
+    + main(String[])
+}
+
+DiarioDigitale --> Diario
+Diario --> Nota
+
+@enduml

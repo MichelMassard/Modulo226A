@@ -1,9 +1,7 @@
 import java.util.Scanner;
 
 /**
- * Classe principale che gestisce l'interfaccia utente del Diario Digitale.
- * Permette di aggiungere, visualizzare, cercare, modificare ed eliminare note
- * tramite un semplice menu testuale.
+ * Classe principale che gestisce l'interfaccia del Diario Digitale.
  *
  * @author Michel Massard
  * @version Giugno 2025
@@ -11,8 +9,7 @@ import java.util.Scanner;
 public class DiarioDigitale {
 
     /**
-     * Simula la pulizia dello schermo stampando molte righe vuote.
-     * Questo serve a "pulire" la console in assenza di un vero comando di pulizia.
+     * Pulisce lo schermo.
      */
     public static void pulisciConsole() {
         for (int i = 0; i < 50; i++) {
@@ -21,10 +18,7 @@ public class DiarioDigitale {
     }
 
     /**
-     * Metodo principale che avvia il programma e gestisce il ciclo di interazione con l'utente.
-     * Permette di scegliere varie opzioni per gestire le note del diario.
      *
-     * @param args gli argomenti della riga di comando (non usati)
      * @throws InterruptedException per gestire le pause temporali con Thread.sleep
      */
     public static void main(String[] args) throws InterruptedException {

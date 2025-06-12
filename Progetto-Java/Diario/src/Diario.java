@@ -4,8 +4,7 @@ import java.util.*;
 /**
  * Questa classe rappresenta un diario dove è possibile aggiungere,
  * cercare, modificare, eliminare e visualizzare delle note.
- * Le note vengono anche salvate su file, così non si perdono.
- *
+ * Le note vengono salvate su file *
  * @author Michel Massard
  * @version Giugno 2025
  */
@@ -137,7 +136,7 @@ public class Diario {
                 if (riga.startsWith("Titolo: ")) {
                     String titolo = riga.substring(8).trim();
                     String data = reader.readLine().substring(6).trim();
-                    reader.readLine(); // "Contenuto:"
+                    reader.readLine();
                     StringBuilder contenutoBuilder = new StringBuilder();
                     while ((riga = reader.readLine()) != null && !riga.equals("===============")) {
                         contenutoBuilder.append(riga).append("\n");
